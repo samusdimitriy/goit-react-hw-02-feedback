@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import Feedback from './Feedback';
-// import Statistics from './Statistics';
+import Feedback from './Feedback';
+import Statistics from './Statistics';
 
 class App extends Component {
   state = {
@@ -16,8 +16,8 @@ class App extends Component {
 
     return (
       <>
-        {/* <Feedback></Feedback>
-        <Statistics></Statistics> */}
+        <Feedback></Feedback>
+        <Statistics></Statistics>
       </>
     );
   }
