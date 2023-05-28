@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.text_good {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: green;
+}
+
+.text_bad {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.text_neutral {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: blue;
+}
+
+.text_total {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.text_feedback {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: black;
+}
