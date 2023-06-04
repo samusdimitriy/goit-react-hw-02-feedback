@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FeedbackOptions from './Feedback';
 import Statistics from './Statistics';
 import Section from './Section';
+import CustomNotification from './CustomNotification/CustomNotification';
 class App extends Component {
   state = {
     good: 0,
@@ -45,13 +46,17 @@ class App extends Component {
         </Section>
 
         <Section title="Statistics">
-          <Statistics
-            good={good}
-            neutral={neutral}
-            bad={bad}
-            total={totalFeedback}
-            positiveFeedback={positivePercentage}
-          />
+          {totalFeedback === 0 ? (
+            <CustomNotification message="No feedback given" />
+          ) : (
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              total={totalFeedback}
+              positiveFeedback={positivePercentage}
+            />
+          )}
         </Section>
       </>
     );
